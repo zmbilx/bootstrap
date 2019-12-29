@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <title>下拉菜单-导航栏内的下拉菜单用法</title>
+</head>
+<body>
+      <div class="container">
+          <p>带有下拉菜单的标签页</p>
+          <ul class="nav nav-tabs">
+              <li class="active">
+                  <a href="#">Home</a>
+              </li>
+
+              <li>
+                  <a href="#">SVN</a>
+              </li>
+
+              <li>
+                  <a href="#">IOS</a>
+              </li>
+
+              <li>
+                  <a href="#">VB.net</a>
+              </li>
+
+              <li class="dorpdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      Java <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li>
+                          <a href="#">Swing</a>
+                      </li>
+
+                      <li>
+                          <a href="#">jMeter</a>
+                      </li>
+
+                      <li>
+                          <a href="#">EJB</a>
+                      </li>
+
+                      <li class="divider"></li>
+
+                      <li>
+                          <a href="#">分离的链接</a>
+                      </li>
+
+                      <li class="divider"></li>
+
+                      <li>
+                          <a href="#">另一个分离的链接</a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li>
+                  <a href="#">PHP</a>
+              </li>
+          </ul>
+
+      </div>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

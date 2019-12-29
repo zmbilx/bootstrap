@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>辅助类-清除浮动</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World!</h1>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3" style="background-color: lavender;">
+                列 1 <br>
+                重置窗口大小，查看效果。也尝试删除有 clearfix 的div查看效果。
+            </div>
+            <div class="col-xs-6 col-sm-3" style="background-color: lavender;">
+                列 2
+            </div>
+            <!--Add clearfix for only the for only the required viewport-->
+            <div class="clearfix visible-xs"></div>
+            <div class="col-xs-6 col-sm-3" style="background-color: lightcyan">
+                列 3
+            </div>
+            <div class="col-xs-6 col-sm-3" style="background-color: lightcyan">
+                列 4
+            </div>
+        </div>
+    </div>
+</body>
+</html>

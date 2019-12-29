@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>带有下拉菜单的按扭</title>
+</head>
+<body>
+    <div class="container">
+        <div style="padding: 100px 100px 10px">
+            <form class="bs-example bs-example-form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    下拉菜单<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">功能</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">另一个功能</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">其他</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">分离的链接</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    下拉菜单<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li>
+                                        <a href="#">功能</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">另一个功能</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">其他</a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a href="#">分离的链接</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

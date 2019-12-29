@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>模态对话框-事件调用</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>模态对话框(Modal)插件事件</h2>
+        <!--按扭触发模态框-->
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            开始演示模态对话框
+        </button>
+        <!--模态框-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="model-tittle" id="myModalLabel">模态框(Modal)标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        点击关闭按扭，检查事件功能
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-default">提交更改</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+           $('#myModal').modal('hide');
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#myModal').on('hide.bs.modal',
+            function(){
+                alert('嘿！我听说您喜欢我！')
+            });
+        });
+    </script>
+
+</body>
+</html>
